@@ -1,0 +1,6 @@
+framework module XTShowFramework {
+  umbrella header "XTShowFramework.h"
+
+  export *
+  module * { export * }
+}
