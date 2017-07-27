@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EBookSDK"
-  s.version      = "0.5"
+  s.version      = "0.6"
   s.summary      = "EBookSDK的短暂描述."
 
   # This description is used to generate tags and improve search results.
@@ -91,12 +91,12 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #s.source_files  = "EBookSDK/*"
-  s.vendored_frameworks ='EBookSDK/XTShowFramework.framework'
+  s.source_files  = "EBookSDK/*"  #此处是正常开源需要包含的内容
+  #s.vendored_frameworks ='EBookSDK/XTShowFramework.framework'  #上传framework时需要包含的字段
 
   #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "EBookSDK/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
