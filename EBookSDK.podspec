@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EBookSDK"
-  s.version      = "0.6"
+  s.version      = "0.8"
   s.summary      = "EBookSDK的短暂描述."
 
   # This description is used to generate tags and improve search results.
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+   s.framework  = "WebKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
