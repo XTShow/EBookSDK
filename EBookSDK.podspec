@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EBookSDK"
-  s.version      = "0.9"
+  s.version      = "1.1"
   s.summary      = "EBookSDK的短暂描述."
 
   # This description is used to generate tags and improve search results.
