@@ -7,7 +7,7 @@
 //
 
 #import "BaseVC.h"
-
+#import <WebKit/WKWebView.h>
 @interface BaseVC ()
 
 @end
