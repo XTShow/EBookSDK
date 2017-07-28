@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-    s.ios.deployment_target = "8.0"
+  # s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -80,7 +80,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/XTShow/EBookSDK.git", :tag => s.version.to_s }
+  #s.source       = { :git => "https://github.com/XTShow/EBookSDK.git", :tag => s.version.to_s }
+  s.source       = { :http => "http://cdn-qn-pub.jsxfedu.com/XT/EBookSDK.framework.zip"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,8 +95,11 @@ Pod::Spec.new do |s|
   #s.source_files  = "EBookSDK/*"  #此处是正常开源需要包含的内容
 
 
-  #上传framework时需要包含的字段
-  s.vendored_frameworks ='EBookSDK/EBookSDK.framework'  
+  
+  #s.vendored_frameworks ='EBookSDK/EBookSDK.framework'   #上传framework时需要包含的字段
+
+  s.vendored_frameworks ='EBookSDK.framework'
+
   #s.public_header_files = "EBookSDK/**/*.h"
 
   #s.exclude_files = "Classes/Exclude"
