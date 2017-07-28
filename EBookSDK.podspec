@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EBookSDK"
-  s.version      = "1.5"
+  s.version      = "1.7"
   s.summary      = "EBookSDK的短暂描述."
 
   # This description is used to generate tags and improve search results.
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-   s.ios.deployment_target = "8.0"
+    s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -95,8 +95,8 @@ Pod::Spec.new do |s|
 
 
   #上传framework时需要包含的字段
-  s.ios.vendored_frameworks ='EBookSDK/XTShowFramework.framework'  
-  s.public_header_files = "EBookSDK/**/*.h"
+  s.vendored_frameworks ='EBookSDK/EBookSDK.framework'  
+  #s.public_header_files = "EBookSDK/**/*.h"
 
   #s.exclude_files = "Classes/Exclude"
 
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-   s.frameworks  = 'WebKit'
+   s.framework  = 'WebKit'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
