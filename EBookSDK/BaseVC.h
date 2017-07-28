@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface BaseVC : UIViewController
 -(void)makeWeb;
 @end
